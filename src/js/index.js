@@ -14,8 +14,6 @@ const {form, screenInput} = UI;
 UI.start();
 POST(form, screenInput, url);
 
-//(editBtnArray, saveBtnArray, content, isCompleted, url)
-
 async function test () {
     await GET(UI, url);
     PUT(
@@ -32,14 +30,3 @@ async function test () {
 }
 
 test();
-
-// .then(() => {
-// 	PUT(
-// 		document.querySelectorAll(".editBtn"),
-// 		document.querySelectorAll(".saveBtn"),
-// 		document.querySelectorAll(".listsBlockItemContent"),
-// 		document.querySelectorAll(".done"),
-// 		url
-// 	);
-// 	DELETE(document.querySelectorAll(".removeBtn"), url);
-// })
